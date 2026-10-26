@@ -1,0 +1,7 @@
+path: /home/hemanth/projects/malaria_detector/data/synth_det_pages
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: uninfected
+  1: infected

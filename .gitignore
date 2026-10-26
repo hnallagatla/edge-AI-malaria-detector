@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local environments and unnecessary generated files
+malaria_detector_venv/
+runs/detect/predict*/
+jetson-orin-st7789/
+jetson-orin-spi-overlay-guide/
+cuda-keyring_*.deb
+.env.*
