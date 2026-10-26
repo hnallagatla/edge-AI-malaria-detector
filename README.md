@@ -9,6 +9,8 @@
 
 Demonstration of the Jetson Orin Nano Super prototype and its integrated camera-to-LCD interface.
 
+This project is described in my solo-authored paper:📄 **[Read my full IEEE BIBM 2026 research paper](BIBM_2026_UGHS_Hemanth_Nallagatla_Camera_Ready.pdf)**
+
 > **Hardware and setup required:** The live prototype is **not a plug-and-play desktop application**. Running [`tools/lcd_display.py`](tools/lcd_display.py) requires a configured **NVIDIA Jetson Orin Nano Super** with a compatible JetPack/CUDA/TensorRT environment, a **USB webcam**, and a **connected ST7789 SPI LCD** with SPI enabled and the `jetson_orin_st7789` display driver installed. The relevant Python dependencies and model files must also be available. Some data-preparation and analysis scripts can run separately, but the integrated camera-to-LCD system cannot be reproduced by simply running the code on an ordinary laptop.
 
 ## The Project
@@ -133,9 +135,9 @@ The next engineering steps are to test genuinely held-out patient/slide data, va
 
 ## Research and Credits
 
-This project is described in my solo-authored paper:
+This project is described in my solo-authored paper:📄 **[Read my full IEEE BIBM 2026 research paper](BIBM_2026_UGHS_Hemanth_Nallagatla_Camera_Ready.pdf)**
 
-**Hemanth Nallagatla**, *“Resource-Aware Edge AI for Malaria Cell Detection: Precision-Resolution Tradeoffs and Tiered TensorRT Inference.”* Accepted for presentation at the **IEEE BIBM 2026 Undergraduate and High School Symposium (UGHS)**. Proceedings publication is subject to conference requirements.
+**Hemanth Nallagatla**, *“Resource-Aware Edge AI for Malaria Cell Detection: Precision-Resolution Tradeoffs and Tiered TensorRT Inference.”* Accepted for presentation and publication at the **IEEE BIBM 2026 Undergraduate and High School Symposium (UGHS)**.
 
 Source cell images: **NIH/NLM malaria thin-blood-smear dataset**, described by **Rajaraman et al.**, “Pre-trained convolutional neural networks as feature extractors toward improved malaria parasite detection in thin blood smear images,” *PeerJ* 6:e4568 (2018), DOI: [10.7717/peerj.4568](https://doi.org/10.7717/peerj.4568). The project uses third-party tools including Ultralytics YOLO, NVIDIA TensorRT/TegraStats, PyTorch, and open-source display libraries; their respective license terms apply. Dataset redistribution rights should be checked independently of repository visibility.
 
