@@ -88,7 +88,7 @@ USB camera → INT8-320 → confidence check → sufficient → display
                         ↓
                    insufficient
                         ↓
-                    FP16-480 → confidence check
+                    FP16-480 → confidence check → sufficient → display
                                      ↓
                                 insufficient
                                      ↓
