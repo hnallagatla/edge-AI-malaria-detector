@@ -84,16 +84,15 @@ That led to three operating roles rather than one supposedly “best” model: a
 The [integrated prototype](tools/lcd_display.py) begins with **INT8-320**. It combines infected-detection confidence with the top detection scores, smooths the result over time, and can escalate to **FP16-480** and then **FP16-640** when confidence falls below configured thresholds and the assumed battery state permits it.
 
 ```text
-USB camera → INT8-320 → confidence check ── sufficient ──→ display
-                        │
+USB camera → INT8-320 → confidence check → sufficient → display
+                        ↓
                    insufficient
                         ↓
                     FP16-480 → confidence check
-                                     │
+                                     ↓
                                 insufficient
                                      ↓
                                   FP16-640
-                                     │
                                      ↓
                         counts + zoom + optional Eigen-CAM
                                      ↓
@@ -135,7 +134,7 @@ The next engineering steps are to test genuinely held-out patient/slide data, va
 
 ## Research and Credits
 
-This project is described in my solo-authored paper:📄 **[Read my full IEEE BIBM 2026 research paper](BIBM_2026_UGHS_Hemanth_Nallagatla_Camera_Ready.pdf)**
+This project is described in my solo-authored paper: **[Read my full IEEE BIBM 2026 research paper](BIBM_2026_UGHS_Hemanth_Nallagatla_Camera_Ready.pdf)**
 
 **Hemanth Nallagatla**, *“Resource-Aware Edge AI for Malaria Cell Detection: Precision-Resolution Tradeoffs and Tiered TensorRT Inference.”* Accepted for presentation and publication at the **IEEE BIBM 2026 Undergraduate and High School Symposium (UGHS)**.
 
